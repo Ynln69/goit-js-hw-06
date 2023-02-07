@@ -15,7 +15,7 @@ function onFormSubmit(event) {
 
   mail === "" || password === ""
     ? alert("Всі поля повинні бути заповнені!")
-    : console.log(formData);
+    : event.currentTarget.reset();
 
-  event.currentTarget.reset();
+  console.log(formData);
 }
